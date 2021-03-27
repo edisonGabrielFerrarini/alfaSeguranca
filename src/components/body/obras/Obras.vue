@@ -21,7 +21,7 @@
                 <p
                   class="display-1"
                 >
-                  SOBRE
+                  CONSTRUÇÃO CIVIL EM GERAL
                   <v-divider></v-divider>
                 </p>
               </v-component>
@@ -41,8 +41,8 @@ export default {
   },
   data(){
     return {
-      img: require('@/assets/img/aperto de mao.jpg'),
-      texto: 'A EMPRESA MEGA ALFA TEM UM ALTO COMPROMETIMENTO E EFICIÊNCIA. NOSSA MAIOR MISSÃO É PROTEGER E ASSEGURAR QUE NOSSO CLIENTE RECEBA O MELHOR SERVIÇO.'  
+      img: require('@/assets/img/obras.jpg'),
+      texto: 'A EMPRESA MEGA ALFA ALÉM DE SER REFERÊNCIA EM SEGURANÇA, TEMOS UM GRUPO ESPECIALIZADO PARA ATENDER TODO TIPO DE CONSTRUÇÃO CIVIL, ALÉM DE DA NOSSA EQUIPE POSSUIR OS EQUIPAMENTOS MAIS MODERNOS PARA TODO TIPO DE OBRA TAMBÉM TEMOS OS MELHORES PREÇOS CUSTO BENEFÍCIO.'  
     }
   }
 }

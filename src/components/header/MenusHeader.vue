@@ -17,7 +17,7 @@
         </div>
         <v-spacer></v-spacer>
         <ButtonHeader parametro="Sobre"/>
-        <ButtonHeader parametro="Obras"/>
+        <ButtonHeader parametro="Construção civil"/>
         <ButtonHeader parametro="Portaria"/>
         <ButtonHeader parametro="Segurança"/>
         <ButtonHeader parametro="Fale Conosco"/>
