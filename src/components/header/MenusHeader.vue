@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import ButtonHeader from '../../components/HeaderComponents/ButtonHeader'
+import ButtonHeader from '../../components/header/ButtonHeader'
 
 export default {
 components: {
