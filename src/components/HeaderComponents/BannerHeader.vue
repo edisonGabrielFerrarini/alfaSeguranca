@@ -1,9 +1,15 @@
 <template>
-  <div class="d-flex flex-column justify-space-between align-center">
+  <v-content justify="space-around">
     <v-img
+      cover
       alt="Vuetify Logo"
-    ></v-img>
-  </div>
+      :src="require(`../../assets/img/familia.jpg`)"
+      aspect-ratio="2.3"
+      class="grey lighten-2"
+      max-width="100%"
+      max-height="100%"
+    />
+  </v-content>
 </template>
 
 <script>
@@ -13,7 +19,6 @@ export default {
       items: [
         {
           id: 1,
-          src: ""
         }
       ]
     }

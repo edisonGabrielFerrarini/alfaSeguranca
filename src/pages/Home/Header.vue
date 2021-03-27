@@ -1,43 +1,26 @@
 <template>
-  <v-container> 
-      <v-app-bar
-        absolute
-        color="#0A2F44"
-        dark
+  <v-component> 
+      <v-card
+        flat
+        tile
       >
-        <div class="d-flex align-center">
-          <v-img
-              alt="Vuetify Logo"
-              class="shrink mr-2 ma-10"
-              contain
-              elevate-on-scroll
-              src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-              transition="scale-transition"
-              width="40"
-            />
-        </div>
-        <v-spacer></v-spacer>
-        <ButtonHeader parametro="Sobre"/>
-        <ButtonHeader parametro="Obras"/>
-        <ButtonHeader parametro="Portaria"/>
-        <ButtonHeader parametro="Segurança"/>
-        <ButtonHeader parametro="Fale Conosco"/>
-      </v-app-bar>
-      <v-container>
-        <BannerHeader />
-      </v-container>
-  </v-container>
+          <MenusHeader />   
+          <v-divider></v-divider> 
+          <BannerHeader />
+      </v-card>
+     
+  </v-component>
 </template>
 
 <script>
-import ButtonHeader from '../../components/HeaderComponents/ButtonHeader'
-import BannerHeader from '../../components/HeaderComponents/BannerHeader'
+import BannerHeader from '../../components/HeaderComponents/BannerHeader.vue'
+import MenusHeader from '../../components/HeaderComponents/MenusHeader.vue'
 
 export default {
-components: {
-  ButtonHeader,
-  BannerHeader
-}
+  components: {
+    BannerHeader,
+    MenusHeader,
+  }
 }
 </script>
 
