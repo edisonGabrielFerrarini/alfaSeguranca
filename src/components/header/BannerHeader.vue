@@ -1,5 +1,7 @@
 <template>
-  <v-content justify="space-around">
+  <v-content 
+    justify="space-around"
+  >
     <v-img
       cover
       alt="Vuetify Logo"

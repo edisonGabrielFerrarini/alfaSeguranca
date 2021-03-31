@@ -7,7 +7,7 @@
         >
         <v-col
           cols="12"
-          sm="10"
+          sm="6"
           md="10"
         > 
           <v-card
@@ -17,7 +17,7 @@
             <v-card-title
               class="headline"
             >
-              <v-component class="d-none d-lg-block">
+              <v-component>
                 <p
                   class="display-1"
                 >

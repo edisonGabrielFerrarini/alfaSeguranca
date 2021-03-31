@@ -17,7 +17,7 @@
             <v-card-title
               class="headline"
             >
-              <v-component class="d-none d-lg-block">
+              <v-component>
                 <p
                   class="display-1"
                 >
