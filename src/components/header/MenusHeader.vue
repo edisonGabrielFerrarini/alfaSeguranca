@@ -27,7 +27,7 @@
       </v-app-bar>
       
       <v-card
-        class="d-xl-none d-md-none d-lg-none "
+        class="d-xl-none d-md-none d-lg-none"
       >
         <v-app-bar
           color="#0A2F44"
