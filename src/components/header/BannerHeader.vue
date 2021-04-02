@@ -1,35 +1,45 @@
 <template>
   <v-content 
-    justify="space-around"
+    justify="space-evenly"
   >
-  <v-content
-    class="titulo-inicial"
-  >
-    <p
-      class="titulo text-h2 text-center d-none d-sm-block"
+    <v-content
+      class="titulo-inicial d-none d-sm-block"
     >
-      PRIORIZAMOS PELA SUA TRANQUILIDADE.
-    </p>
-  </v-content>
-  <v-content
-    class="titulo-mobile"
-  >
-    <p
-      class="titulo titulo-mobile text-body-1 text-center d-xl-none d-md-none d-lg-none"
+      <p
+        class="titulo text-h2 text-center "
+      >
+        PRIORIZAMOS PELA SUA TRANQUILIDADE.
+      </p>
+      <v-img
+          class="ma-auto"
+          alt="Vuetify Logo"
+          elevate-on-scroll
+          :src="require(`../../assets/img/mega-alfa.png`)"
+          transition="scale-transition"
+          width="125"
+          height="150"
+        />
+    </v-content>
+    <v-content
+      class="titulo-mobile d-xl-none d-md-none d-lg-none"
     >
-      PRIORIZAMOS PELA SUA TRANQUILIDADE.
-    </p>
-  </v-content>
+      <p
+        class="titulo titulo-mobile text-body-1 text-center "
+      >
+        PRIORIZAMOS PELA SUA TRANQUILIDADE.
+      </p>
+        
+    </v-content>
     <v-img
       cover
       alt="Vuetify Logo"
       :src="require(`../../assets/img/familia.jpg`)"
       aspect-ratio="2.3"
       class="img-principal grey lighten-2"
+      width="100%"
       max-width="100%"
       max-height="100%"
     />
-    
   </v-content>
 </template>
 
@@ -53,7 +63,7 @@ export default {
     position: absolute;
     width: 30%;
     height: 60%;
-    top: 20%;
+    top: 15%;
     left: 5%;
     z-index: 1;
   }

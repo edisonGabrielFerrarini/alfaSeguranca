@@ -1,7 +1,6 @@
 <template>
   <v-component> 
     <MenusHeader />   
-    <v-divider></v-divider> 
     <BannerHeader />
   </v-component>
 </template>

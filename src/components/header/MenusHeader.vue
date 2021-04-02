@@ -1,5 +1,5 @@
 <template>
-  <content>
+  <v-component>
       <v-app-bar
         color="#0A2F44"
         app
@@ -7,15 +7,17 @@
         elevate-on-scroll
         class="d-none d-sm-block"
       >
-        <div class="d-flex align-center">
+        <div 
+          class="d-flex align-center"
+        >
           <v-img
               alt="Vuetify Logo"
-              class="shrink mr-2 ma-10"
               contain
               elevate-on-scroll
-              src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+              :src="require(`../../assets/img/mega-alfa.png`)"
               transition="scale-transition"
-              width="40"
+              width="100%"
+              height="60"
             />
         </div>
         <v-spacer></v-spacer>
@@ -37,10 +39,9 @@
         <div class="d-flex align-center">
             <v-img
                 alt="Vuetify Logo"
-                class="shrink mr-2 ma-10"
                 contain
                 elevate-on-scroll
-                src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+                :src="require(`../../assets/img/mega-alfa.png`)"
                 transition="scale-transition"
                 width="40"
               />
@@ -55,7 +56,7 @@
         <v-navigation-drawer
             v-model="drawer"
             app
-            bottom
+            right
             temporary
             dark
             color="#0A2F44"
@@ -102,7 +103,7 @@
             </v-list>
           </v-navigation-drawer>
         </v-card>
-  </content>
+  </v-component>
 </template>
 
 <script>
