@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Header from './pages/home/Header';
-import Body from './pages/home/Body';
+import Header from './pages/home/Header.vue';
+import Body from './pages/home/Body.vue';
 
 export default {
   name: 'App',

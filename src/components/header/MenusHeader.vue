@@ -4,6 +4,7 @@
         color="#0A2F44"
         app
         dark
+        elevate-on-scroll
         class="d-none d-sm-block"
       >
         <div class="d-flex align-center">
@@ -26,7 +27,7 @@
       </v-app-bar>
       
       <v-card
-        class="d-xl-none d-md-none d-lg-none mx-auto overflow-hidden"
+        class="d-xl-none d-md-none d-lg-none "
       >
         <v-app-bar
           color="#0A2F44"
@@ -45,13 +46,19 @@
               />
           </div>
           <v-spacer></v-spacer>
-          <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+          <v-app-bar-nav-icon 
+            @click.stop="drawer = !drawer"
+            class="mx-auto"
+          >
+          </v-app-bar-nav-icon>
         </v-app-bar>
         <v-navigation-drawer
             v-model="drawer"
-            absolute
+            app
             bottom
             temporary
+            dark
+            color="#0A2F44"
           > 
             <v-list
               nav
