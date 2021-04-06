@@ -21,11 +21,11 @@
             />
         </div>
         <v-spacer></v-spacer>
-        <ButtonHeader parametro="Sobre"/>
-        <ButtonHeader parametro="Construção civil"/>
-        <ButtonHeader parametro="Portaria"/>
-        <ButtonHeader parametro="Segurança"/>
-        <ButtonHeader parametro="Fale Conosco"/>
+        <router-link to="/"><ButtonHeader parametro="Home"/></router-link>
+        <router-link to="/construcao"><ButtonHeader parametro="Construção civil"/></router-link>
+        <router-link to="/portaria"><ButtonHeader parametro="Portaria"/></router-link>
+        <router-link to="/seguranca"><ButtonHeader parametro="Segurança"/></router-link>
+        <router-link to="/contato"><ButtonHeader parametro="Fale Conosco"/></router-link>
       </v-app-bar>
       
       <v-card
@@ -69,35 +69,45 @@
                 v-model="group"
                 active-class="deep-purple--text text--accent-4"
               >
-                <v-list-item>
-                  <v-list-item-title>
-                    <ButtonHeader parametro="Sobre"/>
-                  </v-list-item-title>
-                </v-list-item>
+                <router-link to="/">
+                  <v-list-item>
+                    <v-list-item-title>
+                      <ButtonHeader parametro="Home"/>
+                    </v-list-item-title>
+                  </v-list-item>
+                </router-link>
 
+              <router-link to="/construcao">
                 <v-list-item>
                   <v-list-item-title>
                     <ButtonHeader parametro="Construção civil"/>
                   </v-list-item-title>
                 </v-list-item>
+              </router-link>
 
+              <router-link to="/portaria">
                 <v-list-item>  
                   <v-list-item-title>
                     <ButtonHeader parametro="Portaria"/>
                   </v-list-item-title>
                 </v-list-item>
+              </router-link>
 
+              <router-link to="/seguranca">
                 <v-list-item>
                   <v-list-item-title>
                     <ButtonHeader parametro="Segurança"/>
                   </v-list-item-title>
                 </v-list-item>
+              </router-link>
 
+              <router-link to="/contato">
                 <v-list-item>
                   <v-list-item-title>
                     <ButtonHeader parametro="Fale Conosco"/>
                   </v-list-item-title>
                 </v-list-item>
+              </router-link>
 
               </v-list-item-group>
             </v-list>

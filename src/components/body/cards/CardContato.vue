@@ -3,14 +3,13 @@
     <v-card-text>
       <v-row>
         <v-col
-          class="mx-10"
+          class="mx-1"
         >
           <v-img  
             alt="Vuetify Logo"
             contain
             elevate-on-scroll
             :src="require(`../../../assets/img/mega-alfa.png`)"
-            transition="scale-transition"
             width="300"
             height="300"
           />

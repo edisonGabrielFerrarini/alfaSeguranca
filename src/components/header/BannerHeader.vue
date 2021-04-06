@@ -3,10 +3,10 @@
     justify="space-evenly"
   >
     <v-content
-      class="titulo-inicial d-none d-sm-block"
+      class="titulo-inicial"
     >
       <p
-        class="titulo text-h2 text-center "
+        class="titulo text-h2 text-center"
       >
         PRIORIZAMOS PELA SUA TRANQUILIDADE.
       </p>
@@ -15,20 +15,9 @@
           alt="Vuetify Logo"
           elevate-on-scroll
           :src="require(`../../assets/img/mega-alfa.png`)"
-          transition="scale-transition"
           width="125"
           height="150"
         />
-    </v-content>
-    <v-content
-      class="titulo-mobile d-xl-none d-md-none d-lg-none"
-    >
-      <p
-        class="titulo titulo-mobile text-body-1 text-center "
-      >
-        PRIORIZAMOS PELA SUA TRANQUILIDADE.
-      </p>
-        
     </v-content>
     <v-img
       cover

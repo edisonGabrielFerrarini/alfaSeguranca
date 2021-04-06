@@ -4,7 +4,7 @@
     <Seguranca />
     <Portaria />
     <Obras />
-    <Contato />
+    <Contato /> 
   </v-component>
 </template>
 

@@ -6,8 +6,8 @@
           justify="center"
         >
         <v-col
-          cols="12"
-          sm="6"
+          cols="10"
+          sm="8"
           md="10"
         > 
           <v-card
@@ -21,7 +21,7 @@
                 <p
                   class="display-1"
                 >
-                  CONSTRUÇÃO CIVIL EM GERAL
+                  CONSTRUÇÃO CIVIL
                   <v-divider></v-divider>
                 </p>
               </v-component>

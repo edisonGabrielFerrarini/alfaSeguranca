@@ -1,14 +1,13 @@
 <template>
   <v-app>
     <Header />
-    <Body />
+    <router-view></router-view>
     <Footer />
   </v-app>
 </template>
 
 <script>
 import Header from './pages/Header.vue';
-import Body from './pages/Body.vue';
 import Footer from './pages/Footer.vue';
 
 export default {
@@ -16,7 +15,6 @@ export default {
 
   components: {
     Header,
-    Body,
     Footer
   },
 
@@ -25,3 +23,8 @@ export default {
   }),
 };
 </script>
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
