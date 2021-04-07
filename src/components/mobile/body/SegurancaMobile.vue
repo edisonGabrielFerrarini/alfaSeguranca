@@ -45,7 +45,7 @@
               <v-col>
                 <CardProduct :path="instalacao.img" :texto="instalacao.texto" :isBloco="true" :titulo="instalacao.titulo"/>    
               </v-col>
-            </v-row>  
+            </v-row>
           </v-card>
         </v-col>
       </v-row>
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import CardProduct from '../cards/CardProduct'
+import CardProduct from '../../body/cards/CardProduct'
 export default {
   components: {
     CardProduct

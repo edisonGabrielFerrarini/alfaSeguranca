@@ -30,13 +30,29 @@
               <v-col>
                 <CardProduct :path="porteiro.img" :texto="porteiro.texto" :isBloco="true" :titulo="porteiro.titulo"/>    
               </v-col>
-            </v-row>
-            <v-row>
               <v-col>
                 <CardProduct :path="treinamento.img" :texto="treinamento.texto" :isBloco="true" :titulo="treinamento.titulo"/>    
               </v-col>
             </v-row>
+            <v-spacer></v-spacer>
           </v-card>
+          <v-row
+            justify="end"
+          >
+            <v-col
+              cols="2"
+            >
+              <router-link to="/portaria">
+                <v-btn
+                  class="ma-3"
+                  color="#0A2F44"
+                  dark
+                >
+                  Mais Serviços
+                </v-btn>
+             </router-link>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-component>

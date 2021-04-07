@@ -41,12 +41,24 @@
                 <CardProduct :path="monitoramento.img" :texto="monitoramento.texto" :isBloco="true" :titulo="monitoramento.titulo"/>    
               </v-col>
             </v-row>
-            <v-row>
-              <v-col>
-                <CardProduct :path="instalacao.img" :texto="instalacao.texto" :isBloco="true" :titulo="instalacao.titulo"/>    
-              </v-col>
-            </v-row>  
           </v-card>
+          <v-row
+            justify="center"
+          >
+            <v-col
+              cols="6"
+            >
+              <router-link to="/seguranca">
+                <v-btn
+                  class="ma-3"
+                  color="#0A2F44"
+                  dark
+                >
+                  Mais Serviços
+                </v-btn>
+             </router-link>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-component>

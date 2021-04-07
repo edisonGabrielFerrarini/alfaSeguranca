@@ -30,23 +30,37 @@
               <v-col>
                 <CardProduct :path="condominio.img" :texto="condominio.texto" :isBloco="true" :titulo="condominio.titulo"/>    
               </v-col>
-            </v-row>
-            <v-row>
               <v-col>
                 <CardProduct :path="ronda.img" :texto="ronda.texto" :isBloco="true" :titulo="ronda.titulo"/>    
               </v-col>
             </v-row>
+            <v-spacer></v-spacer>
             <v-row>
               <v-col>
                 <CardProduct :path="monitoramento.img" :texto="monitoramento.texto" :isBloco="true" :titulo="monitoramento.titulo"/>    
               </v-col>
-            </v-row>
-            <v-row>
               <v-col>
                 <CardProduct :path="instalacao.img" :texto="instalacao.texto" :isBloco="true" :titulo="instalacao.titulo"/>    
               </v-col>
-            </v-row>  
+            </v-row>
           </v-card>
+          <v-row
+            justify="end"
+          >
+            <v-col
+              cols="2"
+            >
+              <router-link to="/seguranca">
+                <v-btn
+                  class="ma-3"
+                  color="#0A2F44"
+                  dark
+                >
+                  Mais Serviços
+                </v-btn>
+             </router-link>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-component>

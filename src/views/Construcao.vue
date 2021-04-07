@@ -18,8 +18,6 @@ export default {
 
 <style>
   .obras {
-    height: 90vh;
-    display: flex;
-    align-content: center;
+    height: 100vh;
   }
 </style>

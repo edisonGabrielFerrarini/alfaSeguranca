@@ -1,5 +1,5 @@
 <template>
-  <v-component >
+  <v-component>
       <v-row 
           class="mt-6"
           no-gutters
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import CardProduct from '../cards/CardProduct'
+import CardProduct from '../../body/cards/CardProduct'
 export default {
   components: {
     CardProduct
@@ -67,5 +67,4 @@ export default {
 </script>
 
 <style>
-
 </style>

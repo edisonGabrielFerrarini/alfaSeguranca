@@ -1,5 +1,7 @@
 <template>
-  <v-container>
+  <v-container
+    mt-5
+  >
     <Contato />
   </v-container>
 </template>

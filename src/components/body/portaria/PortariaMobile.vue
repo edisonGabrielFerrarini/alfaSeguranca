@@ -37,6 +37,23 @@
               </v-col>
             </v-row>
           </v-card>
+          <v-row
+            justify="center"
+          >
+            <v-col
+              cols="6"
+            >
+              <router-link to="/portaria">
+                <v-btn
+                  class="ma-3"
+                  color="#0A2F44"
+                  dark
+                >
+                  Mais Serviços
+                </v-btn>
+             </router-link>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-component>

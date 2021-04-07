@@ -22,9 +22,9 @@
         </div>
         <v-spacer></v-spacer>
         <router-link to="/"><ButtonHeader parametro="Home"/></router-link>
-        <router-link to="/construcao"><ButtonHeader parametro="Construção civil"/></router-link>
-        <router-link to="/portaria"><ButtonHeader parametro="Portaria"/></router-link>
         <router-link to="/seguranca"><ButtonHeader parametro="Segurança"/></router-link>
+        <router-link to="/portaria"><ButtonHeader parametro="Portaria"/></router-link>
+        <router-link to="/construcao"><ButtonHeader parametro="Construção civil"/></router-link>
         <router-link to="/contato"><ButtonHeader parametro="Fale Conosco"/></router-link>
       </v-app-bar>
       
@@ -77,10 +77,10 @@
                   </v-list-item>
                 </router-link>
 
-              <router-link to="/construcao">
+              <router-link to="/seguranca">
                 <v-list-item>
                   <v-list-item-title>
-                    <ButtonHeader parametro="Construção civil"/>
+                    <ButtonHeader parametro="Segurança"/>
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
@@ -93,10 +93,10 @@
                 </v-list-item>
               </router-link>
 
-              <router-link to="/seguranca">
+              <router-link to="/construcao">
                 <v-list-item>
                   <v-list-item-title>
-                    <ButtonHeader parametro="Segurança"/>
+                    <ButtonHeader parametro="Construção civil"/>
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
