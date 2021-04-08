@@ -1,7 +1,7 @@
 <template>
   <v-component>
-    <BannerHeader v-if="isMobile()" />
-    <BannerMobile v-else />
+    <BannerHeader class="d-none d-sm-none d-md-block d-lg-block d-xl-block" />
+    <BannerMobile class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none" />
     <Body />
   </v-component>
 </template>
@@ -18,15 +18,6 @@ export default {
     BannerMobile,
     BannerHeader
   },
-  methods: {
-    isMobile(){
-      if(screen.width > 700) {
-        return true
-      }else {
-        return false
-      }
-    }
-  }
 }
 </script>
 

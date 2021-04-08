@@ -1,17 +1,23 @@
 <template>
-  <v-component v-if="isMobile()">
-    <Sobre />
-    <SegurancaHome />
-    <PortariaHome />
-    <ObrasHome />
-    <Contato /> 
-  </v-component>
-  <v-component v-else>
-    <Sobre />
-    <SegurancaMobile />
-    <PortariaMobile />
-    <ObrasMobile />
-    <Contato /> 
+  <v-component>
+    <v-component
+      class="d-none d-sm-none d-md-block d-lg-block d-xl-block"
+    >
+      <Sobre />
+      <SegurancaHome />
+      <PortariaHome />
+      <ObrasHome />
+      <Contato /> 
+    </v-component>
+    <v-component 
+      class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
+    >
+      <Sobre />
+      <SegurancaMobile />
+      <PortariaMobile />
+      <ObrasMobile />
+      <Contato /> 
+    </v-component>
   </v-component>
 </template>
 
@@ -34,15 +40,6 @@ export default {
     ObrasHome,
     ObrasMobile,
     Contato
-  },
-  methods: {
-    isMobile(){
-      if(screen.width > 700){
-        return true
-      }else {
-        return false
-      }
-    }
   }
 }
 </script>

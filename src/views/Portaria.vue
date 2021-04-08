@@ -4,8 +4,8 @@
     mt-5
     mb-5
   >
-    <Portaria v-if="isMobile()"/>
-    <PortariaMobile v-else />
+    <Portaria class="d-none d-sm-none d-md-block d-lg-block d-xl-block"/>
+    <PortariaMobile class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none" />
   </v-container>
 </template>
 

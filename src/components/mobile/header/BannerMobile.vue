@@ -1,12 +1,11 @@
 <template>
   <v-content
-  class="teste" 
   >   
     <v-content
-      class="titulo-mobile d-xl-none d-md-none d-lg-none"
+      class="titulo-bannermobile"
     >
       <p
-        class="titulo-mobile text-body-1 text-center "
+        class="titulo-banner  "
       >
         PRIORIZAMOS PELA SUA TRANQUILIDADE.
       </p>
@@ -27,21 +26,13 @@
 
 <script>
 export default {
-  data(){
-    return {
-      items: [
-        {
-          id: 1,
-        }
-      ]
-    }
-  }
 }
 </script>
 
 <style>
 
-  .titulo-mobile {
+  
+  .titulo-bannermobile {
     color: white;
     position: absolute;
     width: 50%;
@@ -50,9 +41,64 @@ export default {
     z-index: 1;
   }
 
-  .teste {
-    background: red;
+  @media screen and (max-width: 490px) and (min-width: 280px){
+    
+    .titulo-bannermobile {
+      color: white;
+      display: flex;
+      align-items: center;
+      width: 30%;
+      height: 80%;
+      left: 5%;
+      z-index: 1;
+    }
+    
+    .titulo-banner {
+      font-size: 1em;
+      text-align: center;
+    }
+
   }
 
+
+  @media screen and (max-width: 570px) and (min-width: 490px){
+    
+    .titulo-bannermobile {
+      color: white;
+      display: flex;
+      align-items: center;
+      width: 30%;
+      height: 80%;
+      left: 5%;
+      z-index: 1;
+    }
+    
+    .titulo-banner {
+      font-size: 1.6em;
+      text-align: center;
+    }
+
+  }
+
+
+  @media screen and (max-width: 960px) and (min-width: 570px) {
+    
+    .titulo-bannermobile {
+      color: white;
+      display: flex;
+      align-items: center;
+      width: 30%;
+      height: 80%;
+      left: 5%;
+      z-index: 1;
+    }
+    
+    .titulo-banner {
+      font-size: 1.8em;
+      text-align: center;
+    }
+
+  }
+  
 
 </style>

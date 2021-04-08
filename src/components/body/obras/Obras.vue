@@ -17,7 +17,7 @@
             <v-card-title
               class="headline"
             >
-              <v-component v-if="isMobile()" >
+              <v-component class="d-none d-sm-none d-md-block d-lg-block d-xl-block" >
                 <p
                   class="display-1" 
                 > 
@@ -26,8 +26,7 @@
                 </p>
               </v-component>
               <v-component 
-                v-else
-                class="palavra"
+                class="palavra d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
               >
                 <p
                   class="display-1 " 
@@ -54,15 +53,6 @@ export default {
     return {
       img: require('@/assets/img/obras.jpg'),
       texto: 'A EMPRESA MEGA ALFA ALÉM DE SER REFERÊNCIA EM SEGURANÇA, TEMOS UM GRUPO ESPECIALIZADO PARA ATENDER TODO TIPO DE CONSTRUÇÃO CIVIL, ALÉM DE DA NOSSA EQUIPE POSSUIR OS EQUIPAMENTOS MAIS MODERNOS PARA TODO TIPO DE OBRA TAMBÉM TEMOS OS MELHORES PREÇOS CUSTO BENEFÍCIO.'  
-    }
-  },
-  methods: {
-    isMobile(){
-      if(screen.width > 700){
-        return true
-      }else {
-        return false
-      }
     }
   }
 }

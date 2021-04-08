@@ -1,8 +1,7 @@
 <template>
 <v-flex>
   <v-card
-    v-if="isMobile()"
-    class="d-none d-sm-flex"
+    class="d-none d-sm-none d-md-block d-lg-block d-xl-block"
     flat
   >
     <v-row 
@@ -36,10 +35,9 @@
     </v-row>
   </v-card>
   <v-card
-    else
-    class="d-xl-none d-md-none d-lg-none"
-    flat
-  >
+      class="d-xs-block d-sm-blcok d-md-none d-lg-none d-xl-none"
+      flat
+    >
     <v-row 
       justify="center"
     >
@@ -85,17 +83,6 @@ export default {
     isBloco: Boolean,
     titulo: String
   },
-
-  methods: {
-    isMobile(){
-      if(screen.width > 700) {
-        return true
-      }else {
-        return false
-      }
-    }
-  }
-
 }
 </script>
 

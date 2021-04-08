@@ -6,7 +6,7 @@
       class="titulo-inicial"
     >
       <p
-        class="titulo text-h2 text-center"
+        class="titulo-banner text-center"
       >
         PRIORIZAMOS PELA SUA TRANQUILIDADE.
       </p>
@@ -34,15 +34,6 @@
 
 <script>
 export default {
-  data(){
-    return {
-      items: [
-        {
-          id: 1,
-        }
-      ]
-    }
-  }
 }
 </script>
 
@@ -62,6 +53,7 @@ export default {
     display: flex;
     align-content: center;
     justify-content: center;
+    font-size: 2em;
   }
 
   .titulo-mobile {
@@ -72,5 +64,50 @@ export default {
     left: 5%;
     z-index: 1;
   }
+
+  @media screen and (max-width: 2560px) and (min-width: 1200px) {
+  
+    .titulo-inicial {
+      color: white;
+      position: absolute;
+      width: 30%;
+      height: 60%;
+      top: 15%;
+      left: 5%;
+      z-index: 1;
+    }
+
+    .titulo-banner {
+      font-size: 3em;
+    }
+
+    .titulo-mobile {
+      color: white;
+      position: absolute;
+      width: 50%;
+      height: 60%;
+      left: 5%;
+      z-index: 1;
+    }
+  }
+
+
+  @media screen and (max-width: 1200px) and (min-width: 900px) {
+    .titulo-banner {
+      font-size: 1.8em;
+    }
+
+    .titulo-inicial {
+      color: white;
+      position: absolute;
+      width: 30%;
+      height: 60%;
+      top: 10%;
+      left: 5%;
+      z-index: 1;
+    }
+  }
+
+  
 
 </style>

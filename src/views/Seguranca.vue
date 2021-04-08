@@ -4,8 +4,8 @@
     mb-5
     class="seguranca"
   >
-    <Seguranca v-if="isMobile()"/>
-    <SegurancaMobile v-else />
+    <Seguranca class="d-none d-sm-none d-md-block d-lg-block d-xl-block"/>
+    <SegurancaMobile class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none" />
   </v-container>
 </template>
 
@@ -17,15 +17,6 @@ export default {
   components: {
     Seguranca,
     SegurancaMobile
-  },
-  methods: {
-    isMobile(){
-      if(screen.width > 700){
-        return true
-      } else {
-        return false
-      }
-    }
   }
 }
 </script>
