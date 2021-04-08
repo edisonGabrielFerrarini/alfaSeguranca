@@ -1,6 +1,7 @@
 <template>
   <v-component>
     <v-component
+      v-if="nanMobile()"
       class="d-none d-sm-none d-md-block d-lg-block d-xl-block"
     >
       <Sobre />
@@ -10,7 +11,8 @@
       <Contato /> 
     </v-component>
     <v-component 
-      class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
+      v-else
+      class="home d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
     >
       <Sobre />
       <SegurancaMobile />
@@ -40,10 +42,24 @@ export default {
     ObrasHome,
     ObrasMobile,
     Contato
+  },
+  methods: {
+    nanMobile(){
+      if(screen.width > 960){
+        return true
+      }else {
+        return false
+      }
+    }
   }
 }
 </script>
 
 <style>
-
+  @media screen and (max-width: 960px) {
+    .home {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 </style>
