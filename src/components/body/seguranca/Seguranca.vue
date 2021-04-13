@@ -62,23 +62,23 @@ export default {
     return {
       condominio: {
           img: require('@/assets/img/condominio.jpg'),
-          texto: 'NOSSA EQUIPE RECEBE OS MELHORES TREINAMENTOS E CAPACITAÇÕES EM SEGURANÇA DE CONDOMINÍO, ALÉM DE SERMOS REFERÊNCIA EM TECNOLOGIA.',
+          texto: 'Nossa equipe recebe os melhores treinamentos e capacitações em segurança de condomínio, contamos também com os melhores recursos tecnológicos.',
           titulo: 'CONDOMINÍOS'   
 
       },
       ronda: {
           img: require('@/assets/img/ronda.jpg'),
-          texto: 'NOSSAS RONDAS SÃO ESTREMAMENTE TATICAS, NOSSA EQUIPE É ALTAMENTE TREINADA E PRONTA  PARA RESOLVER QUALQUER AÇÃO DE MANEIRA RAPIDA E LÓGICA.',
+          texto: 'Nossas rondas são extremamente táticas, nossa equipe é altamente treinada e pronta  para resolver qualquer ação de maneira rápida e lógica.',
           titulo: 'RONDAS INTENSIVAS'  
       },
       monitoramento: {
           img: require('@/assets/img/CAMERA3.jpg'),
-          texto: 'O EQUIPE ALFA INVESTE MUITO EM TECNOLOGIA, ATUALMENTE POSSUIMOS CAMERAS ALTAMENTE MODERNAS E COM UMA ALTA QUALIDADE DE IMAGEM. ',
+          texto: 'A equipe Mega Alfa investe muito em tecnologia, atualmente possuímos câmeras altamente modernas e com excelente qualidade de imagem.',
           titulo: 'MONITORAMENTO COM CAMERAS'
       },
       instalacao: {
           img: require('@/assets/img/cameras 2.jpg'),
-          texto: 'ALÉM DE POSSUIRMOS AS CAMERAS MAIS MODERNAS, NOSSAS CAMERAS SÃO INSTALADAS DE MANEIRA ESTRATÉGICA, SEMPRE TIRANDO 100% DA CAPACIDADE E DA EFICIÊNCIA DAS CAMERAS.',
+          texto: 'Além de possuirmos as câmeras mais modernas, nossas câmeras são instaladas de maneira estratégica, sempre tirando 100% da capacidade e da eficiência das câmeras.',
           titulo: 'INSTALAÇÃO DE CAMERAS'
       },
     }

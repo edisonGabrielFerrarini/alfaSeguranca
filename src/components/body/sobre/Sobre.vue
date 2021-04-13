@@ -42,7 +42,7 @@ export default {
   data(){
     return {
       img: require('@/assets/img/aperto de mao.jpg'),
-      texto: 'A EMPRESA MEGA ALFA TEM UM ALTO COMPROMETIMENTO E EFICIÊNCIA. NOSSA MAIOR MISSÃO É PROTEGER E ASSEGURAR QUE NOSSO CLIENTE RECEBA O MELHOR SERVIÇO.'  
+      texto: 'A empresa Mega Alfa dispõe de um alto comprometimento e eficiência. Nossa maior missão é proteger e assegurar que nosso cliente receba o melhor serviço.'  
     }
   }
 }

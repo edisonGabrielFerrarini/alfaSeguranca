@@ -29,7 +29,7 @@
       </v-app-bar>
       
       <v-card
-        class="d-xl-none d-md-none d-lg-none"
+
       >
         <v-app-bar
           color="#0A2F44"
@@ -72,7 +72,7 @@
                 <router-link to="/">
                   <v-list-item>
                     <v-list-item-title>
-                      <ButtonHeader parametro="Home"/>
+                      Home
                     </v-list-item-title>
                   </v-list-item>
                 </router-link>
@@ -80,7 +80,7 @@
               <router-link to="/seguranca">
                 <v-list-item>
                   <v-list-item-title>
-                    <ButtonHeader parametro="Segurança"/>
+                    Segurança
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
@@ -88,7 +88,7 @@
               <router-link to="/portaria">
                 <v-list-item>  
                   <v-list-item-title>
-                    <ButtonHeader parametro="Portaria"/>
+                    Portaria
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
@@ -96,7 +96,7 @@
               <router-link to="/construcao">
                 <v-list-item>
                   <v-list-item-title>
-                    <ButtonHeader parametro="Construção civil"/>
+                    Construção civil
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
@@ -104,7 +104,7 @@
               <router-link to="/contato">
                 <v-list-item>
                   <v-list-item-title>
-                    <ButtonHeader parametro="Fale Conosco"/>
+                    Fale Conosco
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
