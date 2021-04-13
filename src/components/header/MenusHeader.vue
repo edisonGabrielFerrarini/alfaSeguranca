@@ -5,7 +5,7 @@
         app
         dark
         elevate-on-scroll
-        class="d-none d-sm-block"
+        class="d-none d-sm-none d-md-block d-lg-block d-xl-block"
       >
         <div 
           class="d-flex align-center"
@@ -29,7 +29,7 @@
       </v-app-bar>
       
       <v-card
-
+        class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
       >
         <v-app-bar
           color="#0A2F44"
