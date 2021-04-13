@@ -9,6 +9,13 @@
       >
         PRIORIZAMOS PELA SUA TRANQUILIDADE.
       </p>
+
+      <v-img
+          class="ma-auto img-logo"
+          alt="Vuetify Logo"
+          elevate-on-scroll
+          :src="require(`../../../assets/img/mega-alfa.png`)"
+        />
         
     </v-content>
     <v-img
@@ -49,6 +56,7 @@ export default {
       align-items: center;
       width: 30%;
       height: 80%;
+      font-size: 70%;
       left: 5%;
       z-index: 1;
     }
@@ -56,6 +64,11 @@ export default {
     .titulo-banner {
       font-size: 1em;
       text-align: center;
+    }
+
+    .img-logo {
+      width: 20%;
+      height: 25%;
     }
 
   }
@@ -76,6 +89,11 @@ export default {
     .titulo-banner {
       font-size: 1.6em;
       text-align: center;
+    }
+
+    .img-logo {
+      width: 30%;
+      height: 30%;
     }
 
   }
