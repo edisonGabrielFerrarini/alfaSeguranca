@@ -2,6 +2,7 @@
   <v-footer
     dark
     padless
+    class="footer"
   >
   <v-card
       flat
@@ -46,5 +47,5 @@ export default {
 </script>
 
 <style>
-
+    
 </style>

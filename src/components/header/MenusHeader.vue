@@ -24,7 +24,7 @@
         <router-link to="/"><ButtonHeader parametro="Home"/></router-link>
         <router-link to="/seguranca"><ButtonHeader parametro="Segurança"/></router-link>
         <router-link to="/portaria"><ButtonHeader parametro="Portaria"/></router-link>
-        <router-link to="/construcao"><ButtonHeader parametro="Construção civil"/></router-link>
+        <router-link to="/outros"><ButtonHeader parametro="Outros Serviços"/></router-link>
         <router-link to="/contato"><ButtonHeader parametro="Fale Conosco"/></router-link>
       </v-app-bar>
       
@@ -72,7 +72,7 @@
                 <router-link to="/">
                   <v-list-item>
                     <v-list-item-title>
-                      Home
+                      <ButtonHeader parametro="Home"/>
                     </v-list-item-title>
                   </v-list-item>
                 </router-link>
@@ -80,7 +80,7 @@
               <router-link to="/seguranca">
                 <v-list-item>
                   <v-list-item-title>
-                    Segurança
+                    <ButtonHeader parametro="Segurança"/>
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
@@ -88,15 +88,15 @@
               <router-link to="/portaria">
                 <v-list-item>  
                   <v-list-item-title>
-                    Portaria
+                    <ButtonHeader parametro="Portaria"/>
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
 
-              <router-link to="/construcao">
+              <router-link to="/outros">
                 <v-list-item>
                   <v-list-item-title>
-                    Construção civil
+                    <ButtonHeader parametro="Outros Serviços"/>
                   </v-list-item-title>
                 </v-list-item>
               </router-link>
@@ -104,7 +104,7 @@
               <router-link to="/contato">
                 <v-list-item>
                   <v-list-item-title>
-                    Fale Conosco
+                    <ButtonHeader parametro="Fale Conosco"/>
                   </v-list-item-title>
                 </v-list-item>
               </router-link>

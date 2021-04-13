@@ -17,7 +17,7 @@
             <v-card-title
               class="headline"
             >
-              <v-component 
+              <v-component
                 class="d-none d-sm-none d-md-block d-lg-block d-xl-block"
               >
                 <p
@@ -38,13 +38,17 @@
                 </p>
               </v-component>
             </v-card-title>
-            <CardProduct :path="img" :texto="texto" titulo="CONSTRUÇÃO CIVIL"/>
+            <v-row>
+              <v-col>
+                <CardProduct :path="img" :texto="texto" titulo="CONSTRUÇÃO CIVIL"/>
+              </v-col>
+            </v-row>
           </v-card>
-          <v-row
-            justify="end"
+           <v-row
+            justify="center"
           >
             <v-col
-              cols="2"
+              cols="6"
             >
               <router-link to="/outros">
                 <v-btn
@@ -71,10 +75,9 @@ export default {
   data(){
     return {
       img: require('@/assets/img/obras.jpg'),
-      texto: 'A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.',
-      titulo: "Construção Civil"
+      texto: 'A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.'  
     }
-  },
+  }
 }
 </script>
 <style>

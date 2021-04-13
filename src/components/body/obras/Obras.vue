@@ -1,5 +1,7 @@
 <template>
-  <v-component>
+  <v-component
+    class="obras"
+  >
       <v-row 
           class="mt-6"
           no-gutters
@@ -17,26 +19,27 @@
             <v-card-title
               class="headline"
             >
-              <v-component class="d-none d-sm-none d-md-block d-lg-block d-xl-block" >
-                <p
-                  class="display-1" 
-                > 
-                  CONSTRUÇÃO CIVIL
-                  <v-divider></v-divider>
-                </p>
-              </v-component>
               <v-component 
-                class="palavra d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
+                class="palavra"
               >
                 <p
                   class="display-1 " 
                 > 
-                  CONSTRUÇÃO CIVIL
+                  OUTROS SERVIÇOS
                   <v-divider></v-divider>
                 </p>
               </v-component>
             </v-card-title>
-            <CardProduct :path="img" :texto="texto"/>
+            <v-row>
+              <v-col>
+                <CardProduct :path="construcao.img" :texto="construcao.texto" :titulo="construcao.titulo"/>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                <CardProduct :path="servicosGerais.img" :texto="servicosGerais.texto" :titulo="servicosGerais.titulo"/>
+              </v-col>
+            </v-row>
           </v-card>
         </v-col>
       </v-row>
@@ -51,8 +54,16 @@ export default {
   },
   data(){
     return {
-      img: require('@/assets/img/obras.jpg'),
-      texto: 'A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.'  
+      construcao: {
+        img: require('@/assets/img/obras.jpg'),
+        texto: 'A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.',
+        titulo: "CONSTRUÇÃO CIVIL"
+      },
+      servicosGerais: {
+        img: require('@/assets/img/limpeza.jpg'),
+        texto: 'A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.',
+        titulo: "AUXILIAR DE LIMPEZA"
+      }
     }
   }
 }
@@ -64,4 +75,5 @@ export default {
   .palavra p {
     word-break: keep-all;
   }
+
 </style>

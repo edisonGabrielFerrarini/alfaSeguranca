@@ -28,7 +28,7 @@ import SegurancaHome from '../components/body/seguranca/SegurancaHome'
 import PortariaHome from '../components/body/portaria/PortariaHome'
 import PortariaMobile from '../components/body/portaria/PortariaMobile'
 import ObrasHome from '../components/body/obras/ObrasHome'
-import ObrasMobile from '../components/body/obras/ObrasMobile'
+import ObrasMobile from '../components/body/obras/ObrasHomeMobile'
 import Contato from '../components/body/contato/Contato'
 export default {
   components: {

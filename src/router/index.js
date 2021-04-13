@@ -31,7 +31,7 @@ const routes = [
     component: Contato
   },
   {
-    path: '/construcao',
+    path: '/outros',
     name: 'Construcao',
     component: Construcao
   },
