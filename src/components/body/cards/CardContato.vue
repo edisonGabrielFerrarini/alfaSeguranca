@@ -34,21 +34,6 @@
             <v-list-item>
               <v-list-item-icon>
                 <v-icon 
-                  color="indigo"
-                  large
-                >
-                  mdi-cellphone 
-                </v-icon>
-              </v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-title>(41) 98536-6817</v-list-item-title>
-                <v-list-item-subtitle>Celular</v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
-
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon 
                   color="green"
                   large
                 >
@@ -70,7 +55,7 @@
                 </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>alfaseguranca@hotmail.com</v-list-item-title>
+                <v-list-item-title>megaalfaportaria12@gmail.com</v-list-item-title>
                 <v-list-item-subtitle>Email</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
