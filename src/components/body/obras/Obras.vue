@@ -61,7 +61,7 @@ export default {
       },
       servicosGerais: {
         img: require('@/assets/img/limpeza.jpg'),
-        texto: 'A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.',
+        texto: 'A empresa Mega Alfa é capacitada para realizar limpezas e manuntenções em Condomínios',
         titulo: "AUXILIAR DE LIMPEZA"
       }
     }
