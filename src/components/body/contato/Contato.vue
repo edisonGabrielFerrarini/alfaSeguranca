@@ -1,5 +1,7 @@
 <template>
-    <v-component>
+    <v-component
+      class="contato"
+    >
       <v-row 
           class="mt-6"
           no-gutters
@@ -43,5 +45,4 @@ export default {
 </script>
 
 <style>
-
 </style>

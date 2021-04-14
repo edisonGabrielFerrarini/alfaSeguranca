@@ -30,8 +30,17 @@ export default {
 </script>
 
 <style>
-    .portaria {
-      height: 100vh;
-    
+
+    @media screen and (min-width: 10px) and (max-width: 900px) {
+      .portaria {
+        height: 100vh;
+      }  
     }
+
+    @media screen and (min-width: 900px) {
+      .portaria {
+        height: 85vh;
+      }  
+    }
+    
 </style>

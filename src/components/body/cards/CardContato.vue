@@ -1,5 +1,7 @@
 <template>
-  <v-flex>
+  <v-flex
+    class="contato-full"
+  >
     <v-card-text>
       <v-row>
         <v-col
@@ -74,4 +76,9 @@ export default {
 
 <style>
 
+  @media screen and (min-width: 900px) {
+    .contato-full {
+      height: 70vh;
+    }  
+  }
 </style>

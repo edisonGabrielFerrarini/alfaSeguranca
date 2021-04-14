@@ -1,5 +1,7 @@
 <template>
-  <v-component>
+  <v-component
+    class="sobre"
+  >
       <v-row 
           class="mt-6"
           no-gutters
