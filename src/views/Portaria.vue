@@ -1,6 +1,6 @@
 <template>
   <v-container 
-    :class="isMobile() ? 'portaria' : ''"
+    class="portaria"
     mt-5
     mb-5
   >
