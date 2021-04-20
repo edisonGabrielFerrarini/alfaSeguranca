@@ -4,7 +4,8 @@ import Home from '../views/Home.vue'
 import Portaria from '../views/Portaria.vue'
 import Seguranca from '../views/Seguranca.vue'
 import Contato from '../views/Contato.vue'
-import Construcao from '../views/Construcao.vue'
+import Construcao from '../views/Obras.vue'
+import Limpeza from '../views/Limpeza.vue'
 
 
 Vue.use(VueRouter)
@@ -31,11 +32,15 @@ const routes = [
     component: Contato
   },
   {
-    path: '/outros',
+    path: '/obras',
     name: 'Construcao',
     component: Construcao
   },
-  
+  {
+    path: '/limpeza',
+    name: 'Limpeza',
+    component: Limpeza
+  },
 ]
 
 const router = new VueRouter({

@@ -8,7 +8,7 @@
               class="d-none d-sm-none d-md-block d-lg-block d-xl-block"
             >
               <p class="display-1">
-                OBRAS
+                LIMPEZA
                 <v-divider></v-divider>
               </p>
             </v-component>
@@ -16,15 +16,23 @@
               class="palavra d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
             >
               <p class="display-1 ">
-                OBRAS
+                LIMPEZA
                 <v-divider></v-divider>
               </p>
             </v-component>
           </v-card-title>
-          <CardProduct :path="img" :texto="texto" titulo="CONSTRUÇÃO CIVIL" />
+          <v-row>
+            <v-col>
+              <CardProduct
+                :path="img"
+                :texto="texto"
+                titulo="LIMPEZA"
+              />
+            </v-col>
+          </v-row>
         </v-card>
-        <v-row justify="end">
-          <v-col cols="2">
+        <v-row justify="center">
+          <v-col cols="6">
             <router-link to="/outros">
               <v-btn class="ma-3" color="#0A2F44" dark>
                 Mais Serviços
@@ -45,10 +53,9 @@ export default {
   },
   data() {
     return {
-      img: require("@/assets/img/obras.jpg"),
+      img: require("@/assets/img/limpeza.jpg"),
       texto:
-        "A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.",
-      titulo: "Construção Civil",
+        "A empresa Mega Alfa é capacitada para realizar limpezas em Condomínios, Hospitais e Empresas.",
     };
   },
 };

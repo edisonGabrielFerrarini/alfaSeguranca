@@ -1,5 +1,5 @@
 <template>
-  <v-component>
+  <v-component class="limpeza-mobile">
     <v-row class="mt-6" no-gutters justify="center">
       <v-col cols="10" sm="8" md="10">
         <v-card class="mt-6" flat>
@@ -8,7 +8,7 @@
               class="d-none d-sm-none d-md-block d-lg-block d-xl-block"
             >
               <p class="display-1">
-                OBRAS
+                LIMPEZA
                 <v-divider></v-divider>
               </p>
             </v-component>
@@ -16,22 +16,21 @@
               class="palavra d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
             >
               <p class="display-1 ">
-                OBRAS
+                LIMPEZA
                 <v-divider></v-divider>
               </p>
             </v-component>
           </v-card-title>
-          <CardProduct :path="img" :texto="texto" titulo="CONSTRUÇÃO CIVIL" />
+          <v-row>
+            <v-col>
+              <CardProduct
+                :path="servicosGerais.img"
+                :texto="servicosGerais.texto"
+                :titulo="servicosGerais.titulo"
+              />
+            </v-col>
+          </v-row>
         </v-card>
-        <v-row justify="end">
-          <v-col cols="2">
-            <router-link to="/outros">
-              <v-btn class="ma-3" color="#0A2F44" dark>
-                Mais Serviços
-              </v-btn>
-            </router-link>
-          </v-col>
-        </v-row>
       </v-col>
     </v-row>
   </v-component>
@@ -45,10 +44,12 @@ export default {
   },
   data() {
     return {
-      img: require("@/assets/img/obras.jpg"),
-      texto:
-        "A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.",
-      titulo: "Construção Civil",
+      servicosGerais: {
+        img: require("@/assets/img/limpeza.jpg"),
+        texto:
+          "A empresa Mega Alfa é capacitada para realizar limpezas em Condomínios, Hospitais e Empresas.",
+        titulo: "AUXILIAR DE LIMPEZA",
+      },
     };
   },
 };

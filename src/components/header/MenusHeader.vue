@@ -24,7 +24,8 @@
         <router-link to="/"><ButtonHeader parametro="Home"/></router-link>
         <router-link to="/seguranca"><ButtonHeader parametro="Segurança"/></router-link>
         <router-link to="/portaria"><ButtonHeader parametro="Portaria"/></router-link>
-        <router-link to="/outros"><ButtonHeader parametro="Outros Serviços"/></router-link>
+        <router-link to="/obras"><ButtonHeader parametro="Obras"/></router-link>
+        <router-link to="/limpeza"><ButtonHeader parametro="Limpeza"/></router-link>
         <router-link to="/contato"><ButtonHeader parametro="Fale Conosco"/></router-link>
       </v-app-bar>
       
@@ -93,10 +94,18 @@
                 </v-list-item>
               </router-link>
 
-              <router-link to="/outros">
+              <router-link to="/obras">
                 <v-list-item>
                   <v-list-item-title>
-                    <ButtonHeader parametro="Outros Serviços"/>
+                    <ButtonHeader parametro="obras"/>
+                  </v-list-item-title>
+                </v-list-item>
+              </router-link>
+
+              <router-link to="/limpeza">
+                <v-list-item>
+                  <v-list-item-title>
+                    <ButtonHeader parametro="limpeza"/>
                   </v-list-item-title>
                 </v-list-item>
               </router-link>

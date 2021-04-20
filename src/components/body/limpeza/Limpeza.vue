@@ -6,7 +6,7 @@
           <v-card-title class="headline">
             <v-component class="palavra">
               <p class="display-1 ">
-                OBRAS
+                LIMPEZA
                 <v-divider></v-divider>
               </p>
             </v-component>
@@ -14,9 +14,9 @@
           <v-row>
             <v-col>
               <CardProduct
-                :path="construcao.img"
-                :texto="construcao.texto"
-                :titulo="construcao.titulo"
+                :path="servicosGerais.img"
+                :texto="servicosGerais.texto"
+                :titulo="servicosGerais.titulo"
               />
             </v-col>
           </v-row>
@@ -34,12 +34,12 @@ export default {
   },
   data() {
     return {
-      construcao: {
-        img: require("@/assets/img/obras.jpg"),
+      servicosGerais: {
+        img: require("@/assets/img/limpeza.jpg"),
         texto:
-          "A empresa Mega Alfa, possui um grupo especializado para atender todo tipo de construção civil, além de oferecermos os melhores preços.",
-        titulo: "CONSTRUÇÃO CIVIL",
-      }
+          "A empresa Mega Alfa é capacitada para realizar limpezas em Condomínios, Hospitais e Empresas.",
+        titulo: "AUXILIAR DE LIMPEZA",
+      },
     };
   },
 };

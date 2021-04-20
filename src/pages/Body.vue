@@ -7,6 +7,7 @@
       <SegurancaHome />
       <PortariaHome />
       <ObrasHome />
+      <Limpeza/>
       <Contato /> 
     </v-component>
     <v-component 
@@ -16,6 +17,7 @@
       <SegurancaMobile />
       <PortariaMobile />
       <ObrasMobile />
+      <LimpezaMobile />
       <Contato /> 
     </v-component>
   </v-component>
@@ -25,6 +27,8 @@
 import Sobre from '../components/body/sobre/Sobre'
 import SegurancaMobile from '../components/body/seguranca/SegurancaMobile'
 import SegurancaHome from '../components/body/seguranca/SegurancaHome'
+import LimpezaMobile from '../components/body/limpeza/LimpezaHomeMobile'
+import Limpeza from '../components/body/limpeza/LimpezaHome'
 import PortariaHome from '../components/body/portaria/PortariaHome'
 import PortariaMobile from '../components/body/portaria/PortariaMobile'
 import ObrasHome from '../components/body/obras/ObrasHome'
@@ -39,7 +43,9 @@ export default {
     PortariaMobile,
     ObrasHome,
     ObrasMobile,
-    Contato
+    Contato,
+    Limpeza,
+    LimpezaMobile
   },
 }
 </script>
