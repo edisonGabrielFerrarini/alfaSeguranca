@@ -33,7 +33,7 @@
         </v-card>
         <v-row justify="center">
           <v-col cols="6">
-            <router-link to="/outros">
+            <router-link to="/obras">
               <v-btn class="ma-3" color="#0A2F44" dark>
                 Mais Serviços
               </v-btn>
